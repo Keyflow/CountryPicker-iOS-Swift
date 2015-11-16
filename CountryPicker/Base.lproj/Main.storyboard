@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,15 +25,33 @@
                                     <constraint firstAttribute="height" constant="300" id="g0R-W5-IJd"/>
                                 </constraints>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uk1-9g-Mmv">
+                                <rect key="frame" x="20" y="63" width="560" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ka5-uM-Vv1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="uk1-9g-Mmv" secondAttribute="trailing" id="3VD-H9-WSf"/>
                             <constraint firstItem="QfW-3R-wAu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3WE-OZ-qWV"/>
+                            <constraint firstItem="uk1-9g-Mmv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="49E-5I-JCl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QfW-3R-wAu" secondAttribute="bottom" id="HgR-B7-j0n"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uk1-9g-Mmv" secondAttribute="leading" id="Ow3-sv-bUl"/>
+                            <constraint firstItem="uk1-9g-Mmv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="ULz-qj-J20"/>
                             <constraint firstAttribute="trailing" secondItem="QfW-3R-wAu" secondAttribute="trailing" id="aSP-Po-ioR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryPhoneCodePicker" destination="QfW-3R-wAu" id="QLL-iu-Kna"/>
+                        <outlet property="selectedCountryLabel" destination="uk1-9g-Mmv" id="K9I-i8-jCy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CountryPhoneCodePickerDelegate {
+    
+    @IBOutlet weak var selectedCountryLabel: UILabel!
+    @IBOutlet weak var countryPhoneCodePicker: CountryPicker!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        countryPhoneCodePicker.countryPhoneCodeDelegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - CountryPhoneCodePicker Delegate
+    
+    func countryPhoneCodePicker(picker: CountryPicker, didSelectCountryCountryWithName name: String, countryCode: String, phoneCode: String) {
+        selectedCountryLabel.text = name + " " + countryCode + " " + phoneCode
     }
-
-
+    
 }
 

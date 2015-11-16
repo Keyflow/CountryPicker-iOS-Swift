@@ -23,7 +23,7 @@ class CountryView: UIView {
     }
     
     func setup(country: Country) {
-        if let countryCode = country.countryCode {
+        if let countryCode = country.code {
             flagImageView.layer.borderWidth = 0.5
             flagImageView.layer.borderColor = UIColor.darkGrayColor().CGColor
             flagImageView.layer.cornerRadius = 1
@@ -31,8 +31,8 @@ class CountryView: UIView {
             flagImageView.image = UIImage(named: countryCode.lowercaseString)
         }
         
-        countryNameLabel.text = country.countryName
-        countryCodeLabel.text = country.countryPhoneCode
+        countryNameLabel.text = country.name
+        countryCodeLabel.text = country.phoneCode
     }
 
 }

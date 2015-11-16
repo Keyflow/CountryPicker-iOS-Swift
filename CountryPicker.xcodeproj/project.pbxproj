@@ -17,7 +17,6 @@
 		941274BD1BF6101F0022B878 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941274BC1BF6101F0022B878 /* CountryPicker.swift */; };
 		941274BF1BF627F80022B878 /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941274BE1BF627F80022B878 /* CountryView.swift */; };
 		941274C11BF62F450022B878 /* CountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 941274C01BF62F450022B878 /* CountryView.xib */; };
-		941274C31BF63AA70022B878 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941274C21BF63AA70022B878 /* Country.swift */; };
 		945CE4A91BF64BE0007CF589 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945CE4A81BF64BE0007CF589 /* Flags.xcassets */; };
 		945CE4AD1BF64FC9007CF589 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945CE4AC1BF64FC9007CF589 /* CoreTelephony.framework */; };
 		945CE4CA1BF651C5007CF589 /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 945CE4B01BF651C5007CF589 /* NBAsYouTypeFormatter.m */; };
@@ -70,7 +69,6 @@
 		941274BC1BF6101F0022B878 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		941274BE1BF627F80022B878 /* CountryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 		941274C01BF62F450022B878 /* CountryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryView.xib; sourceTree = "<group>"; };
-		941274C21BF63AA70022B878 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		945CE4A81BF64BE0007CF589 /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Flags.xcassets; path = ../Flags.xcassets; sourceTree = "<group>"; };
 		945CE4AC1BF64FC9007CF589 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		945CE4AE1BF6504A007CF589 /* CountryCode-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountryCode-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -155,12 +153,8 @@
 			children = (
 				9412748E1BF60FD20022B878 /* AppDelegate.swift */,
 				941274901BF60FD20022B878 /* ViewController.swift */,
-				941274BC1BF6101F0022B878 /* CountryPicker.swift */,
-				941274C21BF63AA70022B878 /* Country.swift */,
-				941274BE1BF627F80022B878 /* CountryView.swift */,
+				945CE4D91BF9EC68007CF589 /* Country Picker */,
 				941274921BF60FD20022B878 /* Main.storyboard */,
-				941274C01BF62F450022B878 /* CountryView.xib */,
-				945CE4A81BF64BE0007CF589 /* Flags.xcassets */,
 				941274951BF60FD20022B878 /* Assets.xcassets */,
 				941274971BF60FD20022B878 /* LaunchScreen.storyboard */,
 				9412749A1BF60FD20022B878 /* Info.plist */,
@@ -220,6 +214,17 @@
 				945CE4C91BF651C5007CF589 /* NBPhoneNumberUtil.m */,
 			);
 			name = libPhoneNumber;
+			sourceTree = "<group>";
+		};
+		945CE4D91BF9EC68007CF589 /* Country Picker */ = {
+			isa = PBXGroup;
+			children = (
+				941274BC1BF6101F0022B878 /* CountryPicker.swift */,
+				941274BE1BF627F80022B878 /* CountryView.swift */,
+				941274C01BF62F450022B878 /* CountryView.xib */,
+				945CE4A81BF64BE0007CF589 /* Flags.xcassets */,
+			);
+			name = "Country Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +371,6 @@
 				941274BD1BF6101F0022B878 /* CountryPicker.swift in Sources */,
 				945CE4D01BF651C5007CF589 /* NBNumberFormat.m in Sources */,
 				9412748F1BF60FD20022B878 /* AppDelegate.swift in Sources */,
-				941274C31BF63AA70022B878 /* Country.swift in Sources */,
 				945CE4CA1BF651C5007CF589 /* NBAsYouTypeFormatter.m in Sources */,
 				941274BF1BF627F80022B878 /* CountryView.swift in Sources */,
 				945CE4CB1BF651C5007CF589 /* NBMetadataCore.m in Sources */,
