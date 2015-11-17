@@ -1,6 +1,6 @@
-# CountryPicker-iOS-ObjC
+# CountryPicker-iOS-Swift
 
-CountryPicker-iOS-ObjC is an example Xcode project for a modified UIPickerView that allows user to select a country from the list. We in [Keyflow](https://www.keyflow.com/) use it for letting our users to select the country code for his/her phone number on registration, etc. Country picker displays country flags, country names and country phone codes (might be anything instead of country phone codes) like on the picture below.
+CountryPicker-iOS-Swift is an example Xcode project written in Swift for a modified UIPickerView that allows users to select a country from the list. We in [Keyflow](https://www.keyflow.com/) use it for letting our users to select the country code for his/her phone number on registration, etc. Country picker displays country flags, country names and country phone codes (might be anything instead of country phone codes) like on the picture below.
 
 ![Country Picker](/countryPicker.png?raw=true)
 
