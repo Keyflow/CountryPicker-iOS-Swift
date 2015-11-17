@@ -1,11 +1,3 @@
-//
-//  CountryView.swift
-//  CountryPicker
-//
-//  Created by Maksim Mikheev on 13/11/15.
-//  Copyright © 2015 Maksim Mikheev. All rights reserved.
-//
-
 import UIKit
 
 class CountryView: UIView {

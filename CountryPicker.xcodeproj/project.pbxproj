@@ -291,7 +291,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "Maksim Mikheev";
+				ORGANIZATIONNAME = "Keyflow AB";
 				TargetAttributes = {
 					9412748A1BF60FD20022B878 = {
 						CreatedOnToolsVersion = 7.1.1;

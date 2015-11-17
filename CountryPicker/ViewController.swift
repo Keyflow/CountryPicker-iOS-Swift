@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  CountryPicker
-//
-//  Created by Maksim Mikheev on 13/11/15.
-//  Copyright © 2015 Maksim Mikheev. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController, CountryPhoneCodePickerDelegate {
@@ -15,7 +7,11 @@ class ViewController: UIViewController, CountryPhoneCodePickerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let locale = NSLocale.currentLocale()
+        let code = locale.objectForKey(NSLocaleCountryCode) as! String
+        
         countryPhoneCodePicker.countryPhoneCodeDelegate = self
+        countryPhoneCodePicker.setCountry(code)
     }
     
     // MARK: - CountryPhoneCodePicker Delegate

@@ -1,11 +1,3 @@
-//
-//  CountryPicker.swift
-//  CountryPicker
-//
-//  Created by Maksim Mikheev on 13/11/15.
-//  Copyright © 2015 Maksim Mikheev. All rights reserved.
-//
-
 import UIKit
 
 protocol CountryPhoneCodePickerDelegate {
@@ -48,6 +40,18 @@ class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource 
     
     // MARK: - Country Methods
     
+    func setCountry(code: String) {
+        var row = 0
+        for index in 0..<countries.count {
+            if countries[index].code == code {
+                row = index
+                break
+            }
+        }
+        
+        self.selectRow(row, inComponent: 0, animated: true)
+    }
+    
     func countryNamesByCode() -> [Country] {
         var countries = [Country]()
         
@@ -63,7 +67,7 @@ class CountryPicker: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource 
             }
         }
         
-        countries.sortInPlace({ $0.name < $1.name })
+        countries = countries.sort({ $0.name < $1.name })
         
         return countries
     }
